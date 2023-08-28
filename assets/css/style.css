@@ -1,0 +1,396 @@
+@import url(https://db.onlinewebfonts.com/c/1c87f20c55baa7eccc98b8603b5eecea?family=GrifinitoL);
+
+@font-face {
+    font-family: 'Neue';
+    src: url('../fonts/Neue-montreal-free-demo_pangram-pangram_030418/NeueMontreal-Regular.otf');
+}
+
+@font-face {
+    font-family: 'Monument';
+    src: url('../fonts/monumentextended-freeforpersonaluse/MonumentExtended-FreeForPersonalUse/MonumentExtended-Regular.otf');
+}
+
+:root {
+    --dark: #464138;
+    --light: #e1dcce;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Monument';
+    color: var(--dark);
+}
+
+body {
+    position: relative;
+    background: var(--light);
+    z-index: 1;
+}
+
+.container {
+    position: relative;
+    width: 90vw;
+    margin: 0 auto;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: var(--light);
+    z-index: 4;
+    padding: 2em 0;
+}
+
+.logo {
+    height: 5vw;
+}
+
+.nav-container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-container div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+}
+
+nav div a {
+    text-decoration: none;
+    font-size: 4vw;
+    font-family: 'Monument';
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30vw 0 3vw 0;
+}
+
+.header .h1 {
+    position: relative;
+    font-size: 12vw;
+    line-height: 1.123;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Monument';
+    z-index: 3;
+}
+
+header {
+    background: var(--light);
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: var(--light);
+    z-index: 3;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 4px solid var(--dark);
+}
+
+.overlay {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    display: flex;
+}
+
+.bar {
+    height: 100%;
+    width: 10vw;
+    background: var(--dark)
+}
+
+.counter {
+    position: fixed;
+    bottom: 0.2em;
+    right: 0.4em;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    z-index: 10000;
+    color: var(--light);
+    font-size: 10vw;
+}
+
+.parallax {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    /* min-height: 100vh; */
+    overflow: hidden;
+    padding-top: 10vw;
+    background: var(--light);
+    z-index: 1;
+}
+
+.section-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content {
+    width: 100%;
+    max-width: 50vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content h1 {
+    font-size: 7vw;
+    font-weight: 400;
+    line-height: 100%;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+h1.h-2 {
+    margin-left: 5vw;
+}
+
+h1.h-3 {
+    margin-right: 5vw !important;
+}
+
+.image-wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 30vw;
+    height: 20vw;
+
+}
+
+.image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.copy {
+    background: var(--light);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copy p {
+    font-size: 5vw;
+    line-height: 130%;
+}
+
+.section.copy .content {
+    max-width: 90%;
+}
+
+.horizontal-scroll {
+    background: var(--light);
+    overflow-x: hidden;
+}
+
+.blocks {
+    position: relative;
+    display: flex;
+    min-width: 300vw;
+    min-height: 100vh;
+    padding: 7vw;
+}
+
+.block {
+    --spacin: 0vw;
+    position: relative;
+    left: 0;
+    min-width: 90vw;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    border: 4px solid var(--light);
+    background-color: var(--light);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0 0 100px rgba(0, 0, 0, .5);
+}
+
+.block span {
+    position: absolute;
+    top: 1vw;
+    right: 1vw;
+    font-size: 3vw;
+    color: #fff;
+}
+
+.block-1 {
+    z-index: 3;
+    background-image: url('../img/cats-1.jpg');
+}
+
+.block-2 {
+    left: 10vw;
+    z-index: 2;
+    background-image: url('../img/cats-2.jpg');
+}
+
+.block-3 {
+    left: 20vw;
+    z-index: 1;
+    background-image: url('../img/cats-3.jpg');
+}
+
+.paragraph {
+    background: var(--light);
+    padding-top: 100px;
+}
+
+.paragraph h1 {
+    color: #111;
+    font-size: 10vw;
+    padding: 0 0 20px 0;
+}
+
+.paragraph p {
+    font-size: 0.8em;
+    letter-spacing: 0.1px;
+    line-height: 30px;
+    padding: 0 0 40px 0;
+    text-transform: uppercase;
+    text-align: justify;
+}
+
+.fixed_footer {
+    padding: 5vw 0 2vw;
+}
+
+.nav {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    justify-content: space-between;
+    gap: 5vw;
+}
+
+li {
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    letter-spacing: 0.1px;
+    line-height: 30px;
+}
+
+.col li:first-child {
+    font-weight: bolder;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    letter-spacing: 0.1px;
+    line-height: 30px;
+    opacity: 0.5;
+    margin: 6em 0 0 0;
+}
+
+@media (min-width: 400px) {
+    .header {
+        padding-top: 20vw;
+    }
+
+    .logo {
+        height: 3vw;
+    }
+
+    .copyright {
+        flex-direction: row;
+        gap: 3vw;
+    }
+
+    .content {
+        max-width: 80%;
+    }
+}
+
+@media (min-width: 700px) {
+    .nav {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    nav div a {
+        font-size: 2vw;
+    }
+
+    .content p {
+        font-size: 3vw;
+    }
+
+    .content h1 {
+        font-size: 7vw;
+    }
+
+
+}
+
+@media (min-width: 1024px) {
+    .header {
+        padding-top: 10vw;
+    }
+
+    .section.copy .content {
+        max-width: 50%;
+    }
+
+    .copy p {
+        font-size: 3vw;
+    }
+
+    .paragraph h1 {
+        font-size: 5vw;
+    }
+
+    .content h1 {
+        font-size: 3vw;
+    }
+
+    .content p {
+        font-size: 2vw;
+    }
+}
+
+@media (min-width: 1440px) {}
